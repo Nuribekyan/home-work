@@ -38,13 +38,6 @@ const ru = {
     main_text1: "Предстоящие",
     main_text2: "Прошедшие",
     main_text3: "Отмененные",
-    main_text4: "Ольга Никитина",
-    main_text5_1: "Педиатр",
-    main_text5_2: "Оториноларинголог (ЛОР), Терапевт",
-    main_text6: "Стаж 15 лет",
-    main_text7: "Запланировано",
-    main_text8: "Посмотреть запись",
-    main_text9: "Посмотреть постановление",
 
 }
 const en = {
@@ -85,13 +78,6 @@ const en = {
     main_text1: "Upcoming",
     main_text2: "Past",
     main_text3: "Canceled",
-    main_text4: "Olga Nikitina",
-    main_text5_1: "Pediatrcian",
-    main_text5_2: "Otorhinolaryngologist (ENT), Therapist",
-    main_text6: "15 year of experience",
-    main_text7: "Planed",
-    main_text8: "View entry",
-    main_text9: "View the resolution",
 }
 
 
