@@ -1,0 +1,101 @@
+.component-2 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+.component2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 900px;
+    height: 304px;
+    border-radius: 10px;
+    box-shadow: 20px -20px 20px 0px rgba(233, 233, 233, 0.5),
+        -20px 20px 20px 0px rgba(233, 233, 233, 0.5)
+}
+
+.component2-img {
+    background-image: url("../images/4.jpg");
+    background-size: cover;
+    width: 179px;
+    height: 240px;
+    margin: 0px 50px;
+}
+
+.component2-h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+    color: #4F4F4F;
+    position: relative;
+}
+
+.component2-h1::before {
+    content: '';
+    width: 45%;
+    height: 60%;
+    z-index: -1;
+    position: absolute;
+    border-bottom: solid 10px #ff9e28da;
+}
+
+.component2-p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+    color: #4F4F4F;
+
+}
+
+.component2-ul {
+    margin: 0;
+    padding: 0 0 0 25px;
+}
+
+.component2-li {
+    color: #FF9F28;
+    font-size: 20px;
+}
+
+.component2-li span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+    color: #4F4F4F;
+}
+
+.component2-span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+    color: #56CCF2;
+    cursor: pointer;
+}
+
+.component2-button {
+    width: 143px;
+    height: 30px;
+    border-radius: 5px;
+    background: #9DE7FF;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: center;
+    color: #4F4F4F;
+    cursor: pointer;
+    margin: 80px 0px;
+}
