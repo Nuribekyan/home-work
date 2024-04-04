@@ -9,10 +9,7 @@ import { useContext, useState, useEffect } from 'react';
 export default function Header() {
 
     const { t, set_t } = useContext(TranslateContext)
-
-
     const [show, isShow] = useState(false);
-    const a = show ?  <List /> : null
 
     return (
         <>
@@ -29,7 +26,7 @@ export default function Header() {
                         <User text={t.header_text4}></User>
                         <span>&or;</span>
                     </div>
-                    {a}
+                    {show ? <List /> : null}
                 </div>
                 <div>
                     <button className="ru" onClick={() => {
@@ -39,13 +36,9 @@ export default function Header() {
                         set_t(en)
                     }}>EN</button>
                 </div>
-
             </div>
         </>
     );
-
-
-
 }
 
 

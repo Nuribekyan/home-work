@@ -1,0 +1,129 @@
+.balance {
+    position: absolute;
+    background-color: white;
+    width: 1200px;
+    right: -100%;
+}
+
+.balance2 {
+    width: 1145px;
+    height: 68px;
+    border-radius: 10px;
+    background-color: rgba(205, 205, 205, 0.138);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 13px;
+}
+
+.balance1 {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+.balance-span {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43.88px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+    color: #219653;
+    margin-right: 30px;
+}
+
+.balance-button-span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.balance-button {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.07px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #56CCF2;
+    border-radius: 10px;
+    width: 355px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.balance-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.balance-h3 {
+    font-size: 24px;
+    line-height: 29.26px;
+}
+
+.balance-h4 {
+    font-size: 18px;
+    line-height: 21.94px;
+}
+
+.balance-h3,
+.balance-h4 {
+    font-weight: 700;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+    color: #4F4F4F;
+}
+
+.balance-spans span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.07px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+    color: #A0A0A0;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.balance-img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.balance-date,
+.balance-text,
+.balance-sum-green,
+.balance-sum-red {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+}
+
+.balance-text {
+    color: #A0A0A0;
+    width: 203px;
+}
+
+.balance-date {
+    color: #4F4F4F;
+}
+
+.balance-sum-green {
+    color: #219653;
+    width: 80px;
+}
+
+.balance-sum-red {
+    color: #EB5757;
+    width: 80px;
+}

@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 
-.list-component-text:last-child {
+.list-component-text:nth-child(4) {
     border-bottom: none;
 }
 

@@ -1,0 +1,67 @@
+.div {
+    width: 1200px;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #56CCF2;
+    height: 300px;
+}
+
+.doctorInformation {
+    margin: 0 0 20% 20%;
+}
+
+.information-img {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    margin: 0 20px 0 30px;
+}
+
+.information-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.information-p p,
+.information-span span {
+    color: white;
+}
+
+.information-p1 {
+    font-size: 24px;
+}
+
+.information-span span {
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+}
+
+.doctorInformation h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.94px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+    color: #56CCF2;
+    margin: 40px 0 25px 0;
+}
+
+.doctorInformation p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+    color: #4F4F4F;
+    width: 523px;
+}

@@ -7,7 +7,7 @@ import DoctorData from './containers/doctorsData';
 
 export default function Main() {
     const { t } = useContext(TranslateContext);
-    const [doctor_data, setDoctor_data] = useState();
+    const [doctor_data, setDoctor_data] = useState(2);
     const filter = DoctorData.filter((item) => item.number === doctor_data);
 
     return (
@@ -22,5 +22,4 @@ export default function Main() {
             </div>
         </>
     );
-
 }
