@@ -1,22 +1,22 @@
-import { useState } from 'react';
-import Main from './components/main/main';
+import Home from './views/home/home';
+import Balance from './views/balance/balance';
+import MyNotes from './views/myNotes/myNotes';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
-import Component1 from './components/component1/component1';
-import Component2 from './components/component2/component2';
-import { en, ru, TranslateContext } from './components/translate';
+import { Route, Routes } from 'react-router-dom';
+import DoctorInformation from './views/doctorsInformation/doctorInformation';
 
 function App() {
-  const [t, set_t] = useState(ru)
   return (
     <>
-      <TranslateContext.Provider value={{ t, set_t }}>
-        <Header />
-        <Component1 />
-        <Component2 />
-        <Main />
-        <Footer />
-      </TranslateContext.Provider>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/:userId' element={<DoctorInformation />} />
+        <Route path='/notes' element={<MyNotes />} />
+        <Route path='/balance' element={<Balance />} />
+      </Routes>
+      <Footer />
     </>
   );
 }

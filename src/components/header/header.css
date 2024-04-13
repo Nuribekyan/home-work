@@ -1,4 +1,3 @@
-
 .header {
     width: 100%;
     height: 109px;
@@ -34,6 +33,11 @@
     text-align: center;
     color: #A0A0A0;
     cursor: pointer;
+}
+
+.header-text a:hover {
+    font-size: 13px;
+    color: #FF9F28;
 }
 
 .header-img2 {
@@ -79,8 +83,10 @@
     font-size: 14px;
 }
 
-.ru,
-.en {
+.ru-white,
+.ru-blue,
+.en-white,
+.en-blue {
     padding: 9px 7px;
     border: none;
     border-radius: 0px 0px 13px 13px;
@@ -94,16 +100,26 @@
     top: 0px;
 }
 
-.ru {
+.ru-white {
+    color: #787878;
+    background: none;
+    left: 77%;
+}
+
+.ru-blue {
     color: white;
     background: #56CCF2;
     left: 77%;
-
 }
 
-.en {
+.en-white {
     color: #787878;
     background: none;
     left: 80%;
 }
 
+.en-blue {
+    color: white;
+    background: #56CCF2;
+    left: 80%;
+}

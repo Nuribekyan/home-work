@@ -1,24 +1,28 @@
 import './balance.css'
 import { result } from './balanceData'
+import { BalanceData } from './balanceData';
+import { useTranslation } from 'react-i18next';
 
-export default function Balance({ balance }) {
+export default function Balance() {
+    const { t } = useTranslation()
+    
     return (
         <div className='balance'>
             <div className='balance1'>
-                <h3 className="balance-h3">Баланс</h3>
+                <h3 className="balance-h3">{t("balance.key1")}</h3>
                 <div className="balance-button-span">
                     <span className="balance-span">{result} &#8381;</span>
-                    <button className="balance-button">Пополнить счет</button>
+                    <button className="balance-button">{t("balance.key2")}</button>
                 </div>
-                <h4 className="balance-h4">История платежей</h4>
+                <h4 className="balance-h4">{t("balance.key3")}</h4>
                 <div className="balance-spans">
-                    <span>За сегодня</span>
-                    <span>За месяц</span>
-                    <span>За все время</span>
+                    <span>{t("balance.key4")}</span>
+                    <span>{t("balance.key5")}</span>
+                    <span>{t("balance.key6")}</span>
                 </div>
             </div>
             {
-                balance.map((item, index) => {
+                BalanceData.map((item, index) => {
                     return (
                         <div className='balance-div'>
                             <div className='balance2' key={"Balance" + index}>

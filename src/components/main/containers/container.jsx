@@ -1,23 +1,16 @@
 import './container.css';
-import { useState } from 'react';
-import DoctorInformation from '../../../views/doctorsInformation/doctorInformation';
-import DoctorData from './doctorsData';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export default function Container({ doctor }) {
-    const [show, isShow] = useState(false);
-    const [doctor_data, setDoctor_data] = useState(false);
-    const info = DoctorData.filter((item) => item.name === doctor_data);
+    const { t } = useTranslation()
 
     return (
         <>
-            {show ? <DoctorInformation information={info} /> : null}
             {
                 doctor.map((item, index) => {
                     return (
-                        <div className='container' key={"div" + index} onClick={() => {
-                            setDoctor_data(item.name)
-                            isShow(prev => !prev)
-                        }}>
+                        <div className='container' key={"div" + index}>
                             <div className="container1">
                                 <div className="container1-span">
                                     <div>
@@ -48,12 +41,13 @@ export default function Container({ doctor }) {
                                     </div>
                                 </div>
                                 <div className="container2-div2">
-                                    <button className="container2-button1">{item.buttonText1}</button>
-                                    <button className="container2-button2">{item.buttonText2}</button>
+                                    <Link to={`/${item.userId}`}>
+                                        <button className="container2-button1">{t("doctordata.button1")}</button>
+                                    </Link>
+                                    <button className="container2-button2">{t("doctordata.button2")}</button>
                                 </div>
                             </div>
                         </div>
-
                     );
                 }
                 )}

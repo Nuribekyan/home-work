@@ -1,0 +1,79 @@
+{
+    "translation": {
+        "common": {
+            "key1": "My notes"
+        },
+        "header": {
+            "key1": "How to use?",
+            "key2": "To make an appointment with a doctor",
+            "key3": "Artyom Sviridov"
+        },
+        "list": {
+            "key1": "My profile",
+            "key2": "To up balance",
+            "key3": "Exit"
+        },
+        "component1": {
+            "text1_1": "Online consultations",
+            "text1_2": "from",
+            "text1_3": "specialist doctors 24/7",
+            "text2_1": "Consult",
+            "text2_2": "now",
+            "text2_3": "or by",
+            "text2_4": "appointment",
+            "text2_5": "from your computer or using our application,",
+            "text2_6": "available at",
+            "text2_7": "and",
+            "button1": "Register",
+            "button2": "How it works?"
+        },
+        "component2": {
+            "key1": "To make an appointment with a doctor",
+            "key2": "More than 1500 doctors and more than 50 different specializations",
+            "key3": "Appointment at a time convenient for you, without a visit to the clinic",
+            "key4": "Doctors with more than 8 years of experience",
+            "key5": "We will clearly explain the cause of the disease and give detailed recommendations.",
+            "key6": "Register"
+        },
+        "doctordata": {
+            "button1": "View entry",
+            "button2": "View the resolution"
+        },
+        "footer": {
+            "key1": "Online consultations with specialist doctors who offer this service.",
+            "key2": "In our web and mobile application you will find expert doctors who will provide you with personalized care online 24/7",
+            "key3": "How to use",
+            "key4": "FAQ (answers on questions)",
+            "key5": "For doctors",
+            "key6": "About the service",
+            "key7": "Contacts",
+            "key8": "Terms of use",
+            "key9": "Moscow city. st., Lenina 54, office 51",
+            "key10": "Mon-Sun from 09:00 to 18:00"
+        },
+        "main": {
+            "key1": "Upcoming",
+            "key2": "Past",
+            "key3": "Canceled"
+        },
+        "balance": {
+            "key1": "Balance",
+            "key2": "Top up your account",
+            "key3": "Payment history",
+            "key4": "For today",
+            "key5": "Per month",
+            "key6": "During all this time"
+        },
+        "doctorInformation": {
+            "text1": "consultation",
+            "text2": "minutes",
+            "key1_1": "Nearest entry",
+            "key1_2": "Tuesday 03 March",
+            "key2_1": "Education",
+            "key2_2": "1992 - Russian State University",
+            "key2_3": "1994 - Residency in Pediatrics",
+            "key3_1": "Specializes in treatment",
+            "key4_1": "Additionally"
+        }
+    }
+}
