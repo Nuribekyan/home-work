@@ -37,7 +37,9 @@
         },
         "doctordata": {
             "button1": "View entry",
-            "button2": "View the resolution"
+            "button2": "View the resolution",
+            "text1": "Experience",
+            "text2": "years"
         },
         "footer": {
             "key1": "Online consultations with specialist doctors who offer this service.",
@@ -52,6 +54,11 @@
             "key10": "Mon-Sun from 09:00 to 18:00"
         },
         "main": {
+            "key1": "Therapist",
+            "key2": "Pediatrician",
+            "key3": "Obstetrician-gynecologist"
+        },
+        "main_text": {
             "key1": "Upcoming",
             "key2": "Past",
             "key3": "Canceled"

@@ -4,7 +4,7 @@ import MyNotes from './views/myNotes/myNotes';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import { Route, Routes } from 'react-router-dom';
-import DoctorInformation from './views/doctorsInformation/doctorInformation';
+import DoctorProfile from './views/doctorsProfile/doctorProfile';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/:userId' element={<DoctorInformation />} />
+        <Route path='/:id' element={<DoctorProfile />} />
         <Route path='/notes' element={<MyNotes />} />
         <Route path='/balance' element={<Balance />} />
       </Routes>

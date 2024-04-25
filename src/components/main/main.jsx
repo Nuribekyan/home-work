@@ -1,24 +1,34 @@
 import './main.css';
-import { useState } from 'react';
-import './containers/container.css';
-import Container from './containers/container';
+import './doctorsData/doctorList.css';
+import DoctorList from './doctorsData/doctorList';
 import { useTranslation } from 'react-i18next';
-import DoctorData from './containers/doctorsData';
+import { useDispatch } from 'react-redux';
+import { useCallback } from 'react';
+import { DoctorListAction } from '../../store/actions';
+import { useEffect } from 'react';
 
 export default function Main() {
     const { t } = useTranslation()
-    const [doctor_data, setDoctor_data] = useState(2);
-    const filter = DoctorData.filter((item) => item.number === doctor_data);
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(DoctorListAction.get(2))
+    }, [])
+    const clickHandler = useCallback((id) => {
+        return () => {
+            dispatch(DoctorListAction.get(id))
+        }
+    }, [dispatch])
 
     return (
         <>
             <div className='main'>
                 <div className="main-buttons">
-                    <button onClick={() => setDoctor_data(1)}>{t("main.key1")}</button>
-                    <button onClick={() => setDoctor_data(2)}>{t("main.key2")}</button>
-                    <button onClick={() => setDoctor_data(3)}>{t("main.key3")}</button>
+                    <button onClick={clickHandler(1)}>{t("main.key1")}</button>
+                    <button onClick={clickHandler(2)}>{t("main.key2")}</button>
+                    <button onClick={clickHandler(4)}>{t("main.key3")}</button>
                 </div>
-                <Container doctor={filter} />
+                <DoctorList />
             </div>
         </>
     );
